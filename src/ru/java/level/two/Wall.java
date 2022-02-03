@@ -12,9 +12,11 @@ public class Wall implements Barriers{
         players.jumpString();
         players.setSuccess(players.getMaxHeight() >= height);
         if (players.success()){
+            System.out.println(players.getName() + "перепрыгнул стену:" + height + "м");
             return players.getName() + "перепрыгнул стену" + height + "м";
         }
         else{
+            System.out.println(players.getName() + "не смог перепрыгнуть стену");
             return players.getName() + "не смог перепрыгнуть стену";
         }
     }

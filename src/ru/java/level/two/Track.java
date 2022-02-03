@@ -12,8 +12,10 @@ public class Track implements Barriers{
         players.runString();
         players.setSuccess(players.getMaxRange() >= range);
         if (players.success()){
+            System.out.println(players.getName() + "пробегает дистанцию в размере" + range + "км");
             return players.getName() + "пробегает дистанцию в размере" + range + "км";
         }else{
+            System.out.println(players.getName() + "не смог пробежать дистанцию");
             return players.getName() + "не смог пробежать дистанцию";
         }
     }

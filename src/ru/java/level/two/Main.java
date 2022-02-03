@@ -9,7 +9,7 @@ public class Main {
 
         Players [] players = {catPapich, humanMax, robotApple};
 
-        Barriers wall = new Wall(5);
+        Barriers wall = new Wall(20);
 
         Barriers track = new Track(15);
 
@@ -17,7 +17,7 @@ public class Main {
 
         for (int i = 0; i < barriers.length; i++) {
             for (Players players1 : players){
-                if (players1.success()){
+                if(players1.success()){
                     barriers[i].checking(players1);
                 }
             }
