@@ -6,7 +6,7 @@ public class Human implements Players{
     private int maxHeight;
     private boolean success = true;
 
-    public void human(String name, int maxRange, int maxHeight){
+    public Human(String name, int maxRange, int maxHeight){
         this.name = name;
         this.maxHeight = maxHeight;
         this.maxRange = maxRange;
