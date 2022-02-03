@@ -7,5 +7,5 @@ public interface Players {
     int getMaxHeight();
     int getMaxRange();
     boolean success();
-    public void getSuccess(boolean success);
+    public void setSuccess(boolean success);
 }
