@@ -62,8 +62,7 @@ public class Main {
         System.out.println("Второй " + (System.currentTimeMillis() - a));
     }
     public static void main(String[] args) {
-        Main main = new Main();
-        main.firstThread();
-        main.bothTreads();
+        firstThread();
+        bothTreads();
     }
 }
